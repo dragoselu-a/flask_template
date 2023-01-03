@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to the flask!</title>
+</head>
+<body>
+    <h1>YOU, shook me all night long!</h1>
+    <table>
+        <colgroup>Home
+            <col>F1
+            <col>F2
+            <col>F3
+            <col>F4
+        </colgroup>
+        <colgroup>Business
+            <col>B1
+            <col>B2
+            <col>B3
+            <col>B4
+        </colgroup>
+    </table>
+
+    <h2>{{ first_name|upper }} is a good boy.</h2>
+    <p>{{ stuff|title|safe }}</p>
+    {% for book in book_list|reverse %}
+        <p>{{ book }}</p>
+    {% endfor %}
+    <p>{{ book_list.2 }}, {{ book_list.1 }}</p>
+    <p>{{ book_list }}</p>
+    
+</body>
+</html>
